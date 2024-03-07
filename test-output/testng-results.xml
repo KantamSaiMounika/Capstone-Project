@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-03-07T19:40:05 IST" name="Practice Suite" finished-at="2024-03-07T19:42:39 IST" duration-ms="154233">
+    <groups>
+    </groups>
+    <test started-at="2024-03-07T19:40:05 IST" name="Launching Website" finished-at="2024-03-07T19:42:39 IST" duration-ms="154233">
+      <class name="XYZBank.CustomersPageValidationTest">
+        <test-method is-config="true" signature="launcher()[pri:0, instance:XYZBank.CustomersPageValidationTest@67f639d3]" started-at="2024-03-07T19:41:18 IST" name="launcher" finished-at="2024-03-07T19:41:27 IST" duration-ms="9315" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launcher -->
+        <test-method signature="customersPageValidation()[pri:0, instance:XYZBank.CustomersPageValidationTest@67f639d3]" started-at="2024-03-07T19:41:27 IST" name="customersPageValidation" description="Verify Customers Dashboard Of Bank Manager" finished-at="2024-03-07T19:41:38 IST" duration-ms="10984" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- customersPageValidation -->
+      </class> <!-- XYZBank.CustomersPageValidationTest -->
+      <class name="XYZBank.TransactionsPageValidationTest">
+        <test-method is-config="true" signature="launcher()[pri:0, instance:XYZBank.TransactionsPageValidationTest@27462a88]" started-at="2024-03-07T19:41:50 IST" name="launcher" finished-at="2024-03-07T19:42:00 IST" duration-ms="9628" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launcher -->
+        <test-method signature="transcationsPageValidation()[pri:0, instance:XYZBank.TransactionsPageValidationTest@27462a88]" started-at="2024-03-07T19:42:00 IST" name="transcationsPageValidation" description="Verify Transactions Functionality Of Customer" finished-at="2024-03-07T19:42:18 IST" duration-ms="17743" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- transcationsPageValidation -->
+      </class> <!-- XYZBank.TransactionsPageValidationTest -->
+      <class name="XYZBank.CustomerWithdrawalValidationTest">
+        <test-method is-config="true" signature="launcher()[pri:0, instance:XYZBank.CustomerWithdrawalValidationTest@12aba8be]" started-at="2024-03-07T19:40:47 IST" name="launcher" finished-at="2024-03-07T19:40:56 IST" duration-ms="8933" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launcher -->
+        <test-method signature="customerWithdrawalValidation()[pri:5, instance:XYZBank.CustomerWithdrawalValidationTest@12aba8be]" started-at="2024-03-07T19:40:56 IST" name="customerWithdrawalValidation" description="Verify Amount Deposit Functionality Of Customer" finished-at="2024-03-07T19:41:05 IST" duration-ms="8980" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- customerWithdrawalValidation -->
+      </class> <!-- XYZBank.CustomerWithdrawalValidationTest -->
+      <class name="XYZBank.OpenAccountPageValidationTest">
+        <test-method is-config="true" signature="launcher()[pri:0, instance:XYZBank.OpenAccountPageValidationTest@71a8adcf]" started-at="2024-03-07T19:41:38 IST" name="launcher" finished-at="2024-03-07T19:41:47 IST" duration-ms="8790" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launcher -->
+        <test-method signature="openAccountPageValidation()[pri:0, instance:XYZBank.OpenAccountPageValidationTest@71a8adcf]" started-at="2024-03-07T19:41:47 IST" name="openAccountPageValidation" description="Verify Open Account Functionality Of Bank Manager" finished-at="2024-03-07T19:41:50 IST" duration-ms="3126" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openAccountPageValidation -->
+      </class> <!-- XYZBank.OpenAccountPageValidationTest -->
+      <class name="XYZBank.BankManagerLandingPageValidationTest">
+        <test-method is-config="true" signature="launcher()[pri:0, instance:XYZBank.BankManagerLandingPageValidationTest@1e1a0406]" started-at="2024-03-07T19:40:25 IST" name="launcher" finished-at="2024-03-07T19:40:33 IST" duration-ms="8618" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launcher -->
+        <test-method signature="bankManagerLandingPageValidation()[pri:3, instance:XYZBank.BankManagerLandingPageValidationTest@1e1a0406]" started-at="2024-03-07T19:40:33 IST" name="bankManagerLandingPageValidation" description="Verify Login Functionality Of Bank Manager" finished-at="2024-03-07T19:40:35 IST" duration-ms="1287" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bankManagerLandingPageValidation -->
+      </class> <!-- XYZBank.BankManagerLandingPageValidationTest -->
+      <class name="XYZBank.CustomerDepositValidationTest">
+        <test-method is-config="true" signature="launcher()[pri:0, instance:XYZBank.CustomerDepositValidationTest@3cebbb30]" started-at="2024-03-07T19:40:35 IST" name="launcher" finished-at="2024-03-07T19:40:41 IST" duration-ms="6448" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launcher -->
+        <test-method signature="customerDepositValidation()[pri:4, instance:XYZBank.CustomerDepositValidationTest@3cebbb30]" started-at="2024-03-07T19:40:41 IST" name="customerDepositValidation" description="Verify Amount Deposit Functionality Of Customer" finished-at="2024-03-07T19:40:47 IST" duration-ms="6349" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- customerDepositValidation -->
+      </class> <!-- XYZBank.CustomerDepositValidationTest -->
+      <class name="XYZBank.AddCustomerPageValidationTest">
+        <test-method is-config="true" signature="launcher()[pri:0, instance:XYZBank.AddCustomerPageValidationTest@290222c1]" started-at="2024-03-07T19:41:05 IST" name="launcher" finished-at="2024-03-07T19:41:14 IST" duration-ms="8388" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launcher -->
+        <test-method signature="homePageValidation()[pri:1, instance:XYZBank.AddCustomerPageValidationTest@290222c1]" started-at="2024-03-07T19:41:14 IST" name="homePageValidation" description="Verify Visibility And Redirection Behaviour Of Home Page Elements" finished-at="2024-03-07T19:41:18 IST" duration-ms="4299" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePageValidation -->
+      </class> <!-- XYZBank.AddCustomerPageValidationTest -->
+      <class name="XYZBank.NoAccountsValidationTest">
+        <test-method is-config="true" signature="launcher()[pri:0, instance:XYZBank.NoAccountsValidationTest@82de64a]" started-at="2024-03-07T19:42:18 IST" name="launcher" finished-at="2024-03-07T19:42:27 IST" duration-ms="9410" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launcher -->
+        <test-method signature="noAccountsValidation()[pri:0, instance:XYZBank.NoAccountsValidationTest@82de64a]" started-at="2024-03-07T19:42:27 IST" name="noAccountsValidation" description="Verify Customer Journey With Having No Accounts" finished-at="2024-03-07T19:42:39 IST" duration-ms="12004" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- noAccountsValidation -->
+      </class> <!-- XYZBank.NoAccountsValidationTest -->
+      <class name="XYZBank.CustomerLoginValidationTest">
+        <test-method is-config="true" signature="launcher()[pri:0, instance:XYZBank.CustomerLoginValidationTest@23c30a20]" started-at="2024-03-07T19:40:14 IST" name="launcher" finished-at="2024-03-07T19:40:21 IST" duration-ms="6696" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launcher -->
+        <test-method signature="customerLoginValidation()[pri:0, instance:XYZBank.CustomerLoginValidationTest@23c30a20]" started-at="2024-03-07T19:40:21 IST" name="customerLoginValidation" description="Verify Login Functionality Of Customer" finished-at="2024-03-07T19:40:25 IST" duration-ms="3628" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- customerLoginValidation -->
+      </class> <!-- XYZBank.CustomerLoginValidationTest -->
+      <class name="XYZBank.HomePageValidationTest">
+        <test-method is-config="true" signature="launcher()[pri:0, instance:XYZBank.HomePageValidationTest@35aea049]" started-at="2024-03-07T19:40:05 IST" name="launcher" finished-at="2024-03-07T19:40:13 IST" duration-ms="7953" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launcher -->
+        <test-method signature="homePageValidation()[pri:1, instance:XYZBank.HomePageValidationTest@35aea049]" started-at="2024-03-07T19:40:13 IST" name="homePageValidation" description="Verify Visibility And Redirection Behaviour Of Home Page Elements" finished-at="2024-03-07T19:40:14 IST" duration-ms="1542" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePageValidation -->
+      </class> <!-- XYZBank.HomePageValidationTest -->
+    </test> <!-- Launching Website -->
+  </suite> <!-- Practice Suite -->
+</testng-results>
