@@ -26,6 +26,13 @@
 			<artifactId>poi</artifactId>
 			<version>5.2.5</version>
 		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/com.relevantcodes/extentreports -->
+		<dependency>
+			<groupId>com.relevantcodes</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>2.41.2</version>
+		</dependency>
 
 		<dependency>
 			<groupId>org.apache.poi</groupId>
@@ -33,7 +40,17 @@
 			<version>3.16-beta2</version>
 		</dependency>
 
+		<!--
+		https://mvnrepository.com/artifact/p2.eclipse-plugin/org.apache.commons.io -->
 
+		<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.6</version>
+		</dependency>
+
+	
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi-ooxml</artifactId>
@@ -60,23 +77,11 @@
 			<artifactId>openxml4j</artifactId>
 			<version>1.0-beta</version>
 		</dependency>
+
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi</artifactId>
 			<version>3.9</version>
-		</dependency>
-		
-		<dependency>
-			<groupId>com.relevantcodes</groupId>
-			<artifactId>extentreports</artifactId>
-			<version>2.41.2</version>
-		</dependency>
-
-		<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
-		<dependency>
-			<groupId>commons-io</groupId>
-			<artifactId>commons-io</artifactId>
-			<version>2.6</version>
 		</dependency>
 
 

@@ -1,6 +1,7 @@
 package XYZBank;
 
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import base.BaseTest;
@@ -13,10 +14,11 @@ public class BankManagerLandingPageValidationTest extends BaseTest {
 	public static BankManagerLandingPage bankManagerLandingPage;
 	
 	
+	@Parameters({"browser"})
 	@BeforeMethod
-	public void launcher() throws InterruptedException {
+	public void launcher(String browser) throws InterruptedException {
 		
-		initialization();
+		initialization(browser);
 		
 		homePage = new HomePage(driver);
 		bankManagerLandingPage = new BankManagerLandingPage(driver);

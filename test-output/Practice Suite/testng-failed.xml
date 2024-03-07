@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Practice Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Launching Website(failed)">
+  <listeners>
+    <listener class-name="ExtentReportListener.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="Launching Website In Firefox(failed)">
+    <parameter name="browser" value="Firefox"/>
     <classes>
-      <class name="XYZBank.CustomersPageValidationTest">
+      <class name="XYZBank.TransactionsPageValidationTest">
         <methods>
-          <include name="closeBrowser"/>
           <include name="launcher"/>
-          <include name="customersPageValidation"/>
+          <include name="closeBrowser"/>
+          <include name="transcationsPageValidation"/>
         </methods>
-      </class> <!-- XYZBank.CustomersPageValidationTest -->
+      </class> <!-- XYZBank.TransactionsPageValidationTest -->
     </classes>
-  </test> <!-- Launching Website(failed) -->
+  </test> <!-- Launching Website In Firefox(failed) -->
 </suite> <!-- Failed suite [Practice Suite] -->

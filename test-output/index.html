@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Practice_Suite" class="navigator-link">
-              <span class="suite-name border-passed">Practice Suite</span>
+              <span class="suite-name border-failed">Practice Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -56,7 +56,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-Practice_Suite" class="navigator-link ">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">10 methods,   10 passed</span>
+                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Practice_Suite" class="hide-methods failed suite-Practice_Suite"> (hide)</a> <!-- hide-methods failed suite-Practice_Suite -->
+                      <a href="#" panel-name="suite-Practice_Suite" class="show-methods failed suite-Practice_Suite"> (show)</a> <!-- show-methods failed suite-Practice_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Practice_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Practice_Suite" title="XYZBank.TransactionsPageValidationTest" class="method navigator-link" hash-for-method="transcationsPageValidation">transcationsPageValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Practice_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,52 +118,7 @@
                     <div class="method-list-content passed suite-Practice_Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Practice_Suite" title="XYZBank.BankManagerLandingPageValidationTest" class="method navigator-link" hash-for-method="bankManagerLandingPageValidation">bankManagerLandingPageValidation</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Practice_Suite" title="XYZBank.CustomerDepositValidationTest" class="method navigator-link" hash-for-method="customerDepositValidation">customerDepositValidation</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Practice_Suite" title="XYZBank.CustomerLoginValidationTest" class="method navigator-link" hash-for-method="customerLoginValidation">customerLoginValidation</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Practice_Suite" title="XYZBank.CustomerWithdrawalValidationTest" class="method navigator-link" hash-for-method="customerWithdrawalValidation">customerWithdrawalValidation</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Practice_Suite" title="XYZBank.CustomersPageValidationTest" class="method navigator-link" hash-for-method="customersPageValidation">customersPageValidation</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Practice_Suite" title="XYZBank.HomePageValidationTest" class="method navigator-link" hash-for-method="homePageValidation">homePageValidation</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Practice_Suite" title="XYZBank.AddCustomerPageValidationTest" class="method navigator-link" hash-for-method="homePageValidation">homePageValidation</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Practice_Suite" title="XYZBank.NoAccountsValidationTest" class="method navigator-link" hash-for-method="noAccountsValidation">noAccountsValidation</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Practice_Suite" title="XYZBank.OpenAccountPageValidationTest" class="method navigator-link" hash-for-method="openAccountPageValidation">openAccountPageValidation</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Practice_Suite" title="XYZBank.TransactionsPageValidationTest" class="method navigator-link" hash-for-method="transcationsPageValidation">transcationsPageValidation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Practice_Suite -->
@@ -164,125 +133,28 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Practice_Suite" class="panel Practice_Suite">
-          <div class="suite-Practice_Suite-class-passed">
+          <div class="suite-Practice_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">XYZBank.OpenAccountPageValidationTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">XYZBank.TransactionsPageValidationTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="openAccountPageValidation">
-                  </a> <!-- openAccountPageValidation -->
-                  <span class="method-name">openAccountPageValidation</span>
+                  <a name="transcationsPageValidation">
+                  </a> <!-- transcationsPageValidation -->
+                  <span class="method-name">transcationsPageValidation</span>
+                  <div class="stack-trace">java.lang.AssertionError: Verify Redirection To Welcome Page  expected [vtug] but found [Harry Potter]
+	at XYZBank.TransactionsPageValidationTest.transcationsPageValidation(TransactionsPageValidationTest.java:57)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
                   <em>
-(Verify Open Account Functionality Of Bank Manager)                  </em>
+(Verify Transactions Functionality Of Customer)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Practice_Suite-class-passed -->
-          <div class="suite-Practice_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">XYZBank.CustomerDepositValidationTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="customerDepositValidation">
-                  </a> <!-- customerDepositValidation -->
-                  <span class="method-name">customerDepositValidation</span>
-                  <em>
-(Verify Amount Deposit Functionality Of Customer)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Practice_Suite-class-passed -->
-          <div class="suite-Practice_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">XYZBank.AddCustomerPageValidationTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="homePageValidation">
-                  </a> <!-- homePageValidation -->
-                  <span class="method-name">homePageValidation</span>
-                  <em>
-(Verify Visibility And Redirection Behaviour Of Home Page Elements)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Practice_Suite-class-passed -->
-          <div class="suite-Practice_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">XYZBank.HomePageValidationTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="homePageValidation">
-                  </a> <!-- homePageValidation -->
-                  <span class="method-name">homePageValidation</span>
-                  <em>
-(Verify Visibility And Redirection Behaviour Of Home Page Elements)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Practice_Suite-class-passed -->
-          <div class="suite-Practice_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">XYZBank.CustomerLoginValidationTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="customerLoginValidation">
-                  </a> <!-- customerLoginValidation -->
-                  <span class="method-name">customerLoginValidation</span>
-                  <em>
-(Verify Login Functionality Of Customer)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Practice_Suite-class-passed -->
-          <div class="suite-Practice_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">XYZBank.BankManagerLandingPageValidationTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="bankManagerLandingPageValidation">
-                  </a> <!-- bankManagerLandingPageValidation -->
-                  <span class="method-name">bankManagerLandingPageValidation</span>
-                  <em>
-(Verify Login Functionality Of Bank Manager)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Practice_Suite-class-passed -->
-          <div class="suite-Practice_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">XYZBank.CustomerWithdrawalValidationTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="customerWithdrawalValidation">
-                  </a> <!-- customerWithdrawalValidation -->
-                  <span class="method-name">customerWithdrawalValidation</span>
-                  <em>
-(Verify Amount Deposit Functionality Of Customer)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Practice_Suite-class-passed -->
+          </div> <!-- suite-Practice_Suite-class-failed -->
           <div class="suite-Practice_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -300,40 +172,6 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Practice_Suite-class-passed -->
-          <div class="suite-Practice_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">XYZBank.CustomersPageValidationTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="customersPageValidation">
-                  </a> <!-- customersPageValidation -->
-                  <span class="method-name">customersPageValidation</span>
-                  <em>
-(Verify Customers Dashboard Of Bank Manager)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Practice_Suite-class-passed -->
-          <div class="suite-Practice_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">XYZBank.TransactionsPageValidationTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="transcationsPageValidation">
-                  </a> <!-- transcationsPageValidation -->
-                  <span class="method-name">transcationsPageValidation</span>
-                  <em>
-(Verify Transactions Functionality Of Customer)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Practice_Suite-class-passed -->
         </div> <!-- panel Practice_Suite -->
         <div panel-name="test-xml-Practice_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -344,20 +182,19 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Practice Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Launching Website&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;ExtentReportListener.ExtentReporterNG&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Launching Website In Chrome&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;Chrome&quot;/&gt;
+  &lt;/test&gt; &lt;!-- Launching Website In Chrome --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Launching Website In Firefox&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;Firefox&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;XYZBank.HomePageValidationTest&quot;/&gt;
-      &lt;class name=&quot;XYZBank.CustomerLoginValidationTest&quot;/&gt;
-      &lt;class name=&quot;XYZBank.BankManagerLandingPageValidationTest&quot;/&gt;
-      &lt;class name=&quot;XYZBank.CustomerDepositValidationTest&quot;/&gt;
-      &lt;class name=&quot;XYZBank.CustomerWithdrawalValidationTest&quot;/&gt;
-      &lt;class name=&quot;XYZBank.AddCustomerPageValidationTest&quot;/&gt;
-      &lt;class name=&quot;XYZBank.CustomersPageValidationTest&quot;/&gt;
-      &lt;class name=&quot;XYZBank.OpenAccountPageValidationTest&quot;/&gt;
       &lt;class name=&quot;XYZBank.TransactionsPageValidationTest&quot;/&gt;
       &lt;class name=&quot;XYZBank.NoAccountsValidationTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Launching Website --&gt;
+  &lt;/test&gt; &lt;!-- Launching Website In Firefox --&gt;
 &lt;/suite&gt; &lt;!-- Practice Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -369,7 +206,10 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Launching Website (10 classes)</span>
+                <span class="test-name">Launching Website In Chrome (0 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">Launching Website In Firefox (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -395,52 +235,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(10);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'transcationsPageValidation')
-data.setCell(0, 2, 'XYZBank.TransactionsPageValidationTest')
-data.setCell(0, 3, 16101);
+data.setCell(0, 1, 'noAccountsValidation')
+data.setCell(0, 2, 'XYZBank.NoAccountsValidationTest')
+data.setCell(0, 3, 12097);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'noAccountsValidation')
-data.setCell(1, 2, 'XYZBank.NoAccountsValidationTest')
-data.setCell(1, 3, 11111);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'customersPageValidation')
-data.setCell(2, 2, 'XYZBank.CustomersPageValidationTest')
-data.setCell(2, 3, 10604);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'customerWithdrawalValidation')
-data.setCell(3, 2, 'XYZBank.CustomerWithdrawalValidationTest')
-data.setCell(3, 3, 9293);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'customerDepositValidation')
-data.setCell(4, 2, 'XYZBank.CustomerDepositValidationTest')
-data.setCell(4, 3, 7347);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'homePageValidation')
-data.setCell(5, 2, 'XYZBank.AddCustomerPageValidationTest')
-data.setCell(5, 3, 6663);
-data.setCell(6, 0, 6)
-data.setCell(6, 1, 'customerLoginValidation')
-data.setCell(6, 2, 'XYZBank.CustomerLoginValidationTest')
-data.setCell(6, 3, 4515);
-data.setCell(7, 0, 7)
-data.setCell(7, 1, 'openAccountPageValidation')
-data.setCell(7, 2, 'XYZBank.OpenAccountPageValidationTest')
-data.setCell(7, 3, 4188);
-data.setCell(8, 0, 8)
-data.setCell(8, 1, 'homePageValidation')
-data.setCell(8, 2, 'XYZBank.HomePageValidationTest')
-data.setCell(8, 3, 3675);
-data.setCell(9, 0, 9)
-data.setCell(9, 1, 'bankManagerLandingPageValidation')
-data.setCell(9, 2, 'XYZBank.BankManagerLandingPageValidationTest')
-data.setCell(9, 3, 2032);
+data.setCell(1, 1, 'transcationsPageValidation')
+data.setCell(1, 2, 'XYZBank.TransactionsPageValidationTest')
+data.setCell(1, 3, 4824);
 window.suiteTableData['Practice_Suite']= { tableData: data, tableDiv: 'times-div-Practice_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 16 seconds</span>
               <div id="times-div-Practice_Suite">
               </div> <!-- times-div-Practice_Suite -->
             </div> <!-- times-div -->
@@ -466,153 +274,35 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">XYZBank.HomePageValidationTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">XYZBank.TransactionsPageValidationTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">launcher</span>
+                <span class="method-name">launcher(Firefox)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">homePageValidation</span>
-                <span class="method-start">5351 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">closeBrowser</span>
-                <span class="method-start">9029 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">XYZBank.CustomerLoginValidationTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">launcher</span>
-                <span class="method-start">10719 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">customerLoginValidation</span>
-                <span class="method-start">15501 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">closeBrowser</span>
-                <span class="method-start">20017 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">XYZBank.BankManagerLandingPageValidationTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">launcher</span>
-                <span class="method-start">20552 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">bankManagerLandingPageValidation</span>
-                <span class="method-start">24677 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">closeBrowser</span>
-                <span class="method-start">26711 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">XYZBank.CustomerDepositValidationTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">launcher</span>
-                <span class="method-start">27015 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">customerDepositValidation</span>
-                <span class="method-start">31172 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">closeBrowser</span>
-                <span class="method-start">38521 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">XYZBank.CustomerWithdrawalValidationTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">launcher</span>
-                <span class="method-start">40820 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">customerWithdrawalValidation</span>
-                <span class="method-start">45505 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">closeBrowser</span>
-                <span class="method-start">54800 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">XYZBank.AddCustomerPageValidationTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">launcher</span>
-                <span class="method-start">55188 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">homePageValidation</span>
-                <span class="method-start">60180 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">closeBrowser</span>
-                <span class="method-start">66847 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">XYZBank.CustomersPageValidationTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">launcher</span>
-                <span class="method-start">67286 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">customersPageValidation</span>
-                <span class="method-start">72263 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">closeBrowser</span>
-                <span class="method-start">82868 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">XYZBank.OpenAccountPageValidationTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">launcher</span>
-                <span class="method-start">113920 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">openAccountPageValidation</span>
-                <span class="method-start">118441 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">closeBrowser</span>
-                <span class="method-start">122631 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">XYZBank.TransactionsPageValidationTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">launcher</span>
-                <span class="method-start">125892 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">transcationsPageValidation</span>
-                <span class="method-start">130967 ms</span>
+                <span class="method-start">8230 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">147070 ms</span>
+                <span class="method-start">13062 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">XYZBank.NoAccountsValidationTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">launcher</span>
-                <span class="method-start">153551 ms</span>
+                <span class="method-name">launcher(Firefox)</span>
+                <span class="method-start">15680 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">noAccountsValidation</span>
-                <span class="method-start">158570 ms</span>
+                <span class="method-start">22513 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">169684 ms</span>
+                <span class="method-start">34615 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

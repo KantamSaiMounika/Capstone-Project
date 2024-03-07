@@ -3,6 +3,7 @@ package XYZBank;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import base.BaseTest;
@@ -27,10 +28,11 @@ public class TransactionsPageValidationTest extends BaseTest {
 	String depositamount = prop.getProperty("depositAmount");
 	String withdrawalAmount = prop.getProperty("WithdrawalAmount");
 
+	@Parameters({"browser"})
 	@BeforeMethod
-	public void launcher() throws InterruptedException {
+	public void launcher(String browser) throws InterruptedException {
 		
-		initialization();
+		initialization(browser);
 		
 		homePage = new HomePage(driver);
 		customerLoginPage = new CustomerLoginPage(driver);

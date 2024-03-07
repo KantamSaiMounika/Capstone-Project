@@ -1,7 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Practice Suite">
-	<test name="Launching Website">
+	
+	<listeners>
+		<listener class-name="ExtentReportListener.ExtentReporterNG" />
+	</listeners>
+	<test name="Launching Website In Chrome">
+		<parameter name="browser" value="Chrome"></parameter>
+		
+		<classes>
+			<class name="XYZBank.HomePageValidationTest" />
+			<class name="XYZBank.CustomerLoginValidationTest" />
+			<class name="XYZBank.BankManagerLandingPageValidationTest" />
+			<class name="XYZBank.CustomerDepositValidationTest" />
+			<class name="XYZBank.CustomerWithdrawalValidationTest" />
+			<class name="XYZBank.AddCustomerPageValidationTest" />
+			<class name="XYZBank.CustomersPageValidationTest" />
+			<class name="XYZBank.OpenAccountPageValidationTest" />
+			<class name="XYZBank.TransactionsPageValidationTest" />
+			<class name="XYZBank.NoAccountsValidationTest" />
+		</classes>
+	</test>
+	
+	<test name="Launching Website In Firefox">
+		<parameter name="browser" value="Firefox"></parameter>
+		
 		<classes>
 			<class name="XYZBank.HomePageValidationTest" />
 			<class name="XYZBank.CustomerLoginValidationTest" />

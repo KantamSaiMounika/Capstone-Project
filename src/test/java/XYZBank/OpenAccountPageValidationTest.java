@@ -2,6 +2,7 @@ package XYZBank;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import base.BaseTest;
@@ -19,10 +20,11 @@ public class OpenAccountPageValidationTest extends BaseTest {
 	String currency = prop.getProperty("currency");
 	String accountAddedAlertMessage = prop.getProperty("accountAddedAlertMessage");
 	
+	@Parameters({"browser"})
 	@BeforeMethod
-	public void launcher() throws InterruptedException {
+	public void launcher(String browser) throws InterruptedException {
 		
-		initialization();
+		initialization(browser);
 		homePage = new HomePage(driver);
 		bankManagerLandingPage = new BankManagerLandingPage(driver);
 		openAccountPage = new OpenAccountPage(driver);

@@ -2,6 +2,7 @@ package XYZBank;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import base.BaseTest;
@@ -19,11 +20,11 @@ public class AddCustomerPageValidationTest extends BaseTest {
 	String lastname = prop.getProperty("lastName");
 	String postcode = prop.getProperty("postCode");
 	
-	
+	@Parameters({"browser"})
 	@BeforeMethod
-	public void launcher() throws InterruptedException {
+	public void launcher(String browser) throws InterruptedException {
 		
-		initialization();
+		initialization(browser);
 		
 		homePage = new HomePage(driver);
 		bankManagerLandingPage = new BankManagerLandingPage(driver);
@@ -31,7 +32,7 @@ public class AddCustomerPageValidationTest extends BaseTest {
 		
 	}
  
-
+	
 	@Test(description = "Verify Visibility And Redirection Behaviour Of Home Page Elements")
 	public void homePageValidation() throws InterruptedException {
 		

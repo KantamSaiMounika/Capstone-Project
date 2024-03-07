@@ -2,6 +2,7 @@ package XYZBank;
 
 import org.openqa.selenium.By;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import base.BaseTest;
@@ -22,10 +23,11 @@ public class CustomerDepositValidationTest extends BaseTest {
 	String accountnumber = prop.getProperty("accountNumber");
 	String depositamount = prop.getProperty("depositAmount");
 	
+	@Parameters({"browser"})
 	@BeforeMethod
-	public void launcher() throws InterruptedException {
+	public void launcher(String browser) throws InterruptedException {
 		
-		initialization();
+		initialization(browser);
 		
 		homePage = new HomePage(driver);
 		customerLoginPage = new CustomerLoginPage(driver);

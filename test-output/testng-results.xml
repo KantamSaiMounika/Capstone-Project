@@ -1,151 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-07T23:54:38 IST" name="Practice Suite" finished-at="2024-03-07T23:57:51 IST" duration-ms="192697">
+  <suite started-at="2024-03-08T04:03:23 IST" name="Practice Suite" finished-at="2024-03-08T04:04:01 IST" duration-ms="37260">
     <groups>
     </groups>
-    <test started-at="2024-03-07T23:54:38 IST" name="Launching Website" finished-at="2024-03-07T23:57:51 IST" duration-ms="192697">
-      <class name="XYZBank.CustomersPageValidationTest">
-        <test-method is-config="true" signature="launcher()[pri:0, instance:XYZBank.CustomersPageValidationTest@1151e434]" started-at="2024-03-07T23:55:46 IST" name="launcher" finished-at="2024-03-07T23:55:51 IST" duration-ms="4977" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launcher -->
-        <test-method signature="customersPageValidation()[pri:0, instance:XYZBank.CustomersPageValidationTest@1151e434]" started-at="2024-03-07T23:55:51 IST" name="customersPageValidation" description="Verify Customers Dashboard Of Bank Manager" finished-at="2024-03-07T23:56:01 IST" duration-ms="10604" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- customersPageValidation -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:XYZBank.CustomersPageValidationTest@1151e434]" started-at="2024-03-07T23:56:01 IST" name="closeBrowser" finished-at="2024-03-07T23:56:32 IST" duration-ms="31051" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- XYZBank.CustomersPageValidationTest -->
+    <test started-at="2024-03-08T04:03:23 IST" name="Launching Website In Chrome" finished-at="2024-03-08T04:03:23 IST" duration-ms="15">
+    </test> <!-- Launching Website In Chrome -->
+    <test started-at="2024-03-08T04:03:24 IST" name="Launching Website In Firefox" finished-at="2024-03-08T04:04:01 IST" duration-ms="37128">
       <class name="XYZBank.TransactionsPageValidationTest">
-        <test-method is-config="true" signature="launcher()[pri:0, instance:XYZBank.TransactionsPageValidationTest@4b0d79fc]" started-at="2024-03-07T23:56:44 IST" name="launcher" finished-at="2024-03-07T23:56:49 IST" duration-ms="5075" status="PASS">
+        <test-method is-config="true" signature="launcher(java.lang.String)[pri:0, instance:XYZBank.TransactionsPageValidationTest@4dbb42b7]" started-at="2024-03-08T04:03:24 IST" name="launcher" finished-at="2024-03-08T04:03:32 IST" duration-ms="8228" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launcher -->
-        <test-method signature="transcationsPageValidation()[pri:0, instance:XYZBank.TransactionsPageValidationTest@4b0d79fc]" started-at="2024-03-07T23:56:49 IST" name="transcationsPageValidation" description="Verify Transactions Functionality Of Customer" finished-at="2024-03-07T23:57:05 IST" duration-ms="16101" status="PASS">
+        <test-method signature="transcationsPageValidation()[pri:0, instance:XYZBank.TransactionsPageValidationTest@4dbb42b7]" started-at="2024-03-08T04:03:32 IST" name="transcationsPageValidation" description="Verify Transactions Functionality Of Customer" finished-at="2024-03-08T04:03:37 IST" duration-ms="4824" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Verify Redirection To Welcome Page  expected [vtug] but found [Harry Potter]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Verify Redirection To Welcome Page  expected [vtug] but found [Harry Potter]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at XYZBank.TransactionsPageValidationTest.transcationsPageValidation(TransactionsPageValidationTest.java:57)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- transcationsPageValidation -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:XYZBank.TransactionsPageValidationTest@4b0d79fc]" started-at="2024-03-07T23:57:05 IST" name="closeBrowser" finished-at="2024-03-07T23:57:12 IST" duration-ms="6480" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:XYZBank.TransactionsPageValidationTest@4dbb42b7]" started-at="2024-03-08T04:03:37 IST" name="closeBrowser" finished-at="2024-03-08T04:03:39 IST" duration-ms="2611" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- XYZBank.TransactionsPageValidationTest -->
-      <class name="XYZBank.OpenAccountPageValidationTest">
-        <test-method is-config="true" signature="launcher()[pri:0, instance:XYZBank.OpenAccountPageValidationTest@55634720]" started-at="2024-03-07T23:56:32 IST" name="launcher" finished-at="2024-03-07T23:56:37 IST" duration-ms="4521" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launcher -->
-        <test-method signature="openAccountPageValidation()[pri:0, instance:XYZBank.OpenAccountPageValidationTest@55634720]" started-at="2024-03-07T23:56:37 IST" name="openAccountPageValidation" description="Verify Open Account Functionality Of Bank Manager" finished-at="2024-03-07T23:56:41 IST" duration-ms="4188" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openAccountPageValidation -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:XYZBank.OpenAccountPageValidationTest@55634720]" started-at="2024-03-07T23:56:41 IST" name="closeBrowser" finished-at="2024-03-07T23:56:44 IST" duration-ms="3261" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- XYZBank.OpenAccountPageValidationTest -->
-      <class name="XYZBank.CustomerWithdrawalValidationTest">
-        <test-method is-config="true" signature="launcher()[pri:0, instance:XYZBank.CustomerWithdrawalValidationTest@27f981c6]" started-at="2024-03-07T23:55:19 IST" name="launcher" finished-at="2024-03-07T23:55:24 IST" duration-ms="4685" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launcher -->
-        <test-method signature="customerWithdrawalValidation()[pri:0, instance:XYZBank.CustomerWithdrawalValidationTest@27f981c6]" started-at="2024-03-07T23:55:24 IST" name="customerWithdrawalValidation" description="Verify Amount Deposit Functionality Of Customer" finished-at="2024-03-07T23:55:33 IST" duration-ms="9293" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- customerWithdrawalValidation -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:XYZBank.CustomerWithdrawalValidationTest@27f981c6]" started-at="2024-03-07T23:55:33 IST" name="closeBrowser" finished-at="2024-03-07T23:55:34 IST" duration-ms="387" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- XYZBank.CustomerWithdrawalValidationTest -->
-      <class name="XYZBank.BankManagerLandingPageValidationTest">
-        <test-method is-config="true" signature="launcher()[pri:0, instance:XYZBank.BankManagerLandingPageValidationTest@47d9a273]" started-at="2024-03-07T23:54:59 IST" name="launcher" finished-at="2024-03-07T23:55:03 IST" duration-ms="4125" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launcher -->
-        <test-method signature="bankManagerLandingPageValidation()[pri:0, instance:XYZBank.BankManagerLandingPageValidationTest@47d9a273]" started-at="2024-03-07T23:55:03 IST" name="bankManagerLandingPageValidation" description="Verify Login Functionality Of Bank Manager" finished-at="2024-03-07T23:55:05 IST" duration-ms="2032" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bankManagerLandingPageValidation -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:XYZBank.BankManagerLandingPageValidationTest@47d9a273]" started-at="2024-03-07T23:55:05 IST" name="closeBrowser" finished-at="2024-03-07T23:55:05 IST" duration-ms="303" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- XYZBank.BankManagerLandingPageValidationTest -->
-      <class name="XYZBank.CustomerDepositValidationTest">
-        <test-method is-config="true" signature="launcher()[pri:0, instance:XYZBank.CustomerDepositValidationTest@4b8ee4de]" started-at="2024-03-07T23:55:05 IST" name="launcher" finished-at="2024-03-07T23:55:10 IST" duration-ms="4157" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launcher -->
-        <test-method signature="customerDepositValidation()[pri:4, instance:XYZBank.CustomerDepositValidationTest@4b8ee4de]" started-at="2024-03-07T23:55:10 IST" name="customerDepositValidation" description="Verify Amount Deposit Functionality Of Customer" finished-at="2024-03-07T23:55:17 IST" duration-ms="7347" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- customerDepositValidation -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:XYZBank.CustomerDepositValidationTest@4b8ee4de]" started-at="2024-03-07T23:55:17 IST" name="closeBrowser" finished-at="2024-03-07T23:55:19 IST" duration-ms="2298" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- XYZBank.CustomerDepositValidationTest -->
-      <class name="XYZBank.AddCustomerPageValidationTest">
-        <test-method is-config="true" signature="launcher()[pri:0, instance:XYZBank.AddCustomerPageValidationTest@1b11171f]" started-at="2024-03-07T23:55:34 IST" name="launcher" finished-at="2024-03-07T23:55:39 IST" duration-ms="4992" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launcher -->
-        <test-method signature="homePageValidation()[pri:0, instance:XYZBank.AddCustomerPageValidationTest@1b11171f]" started-at="2024-03-07T23:55:39 IST" name="homePageValidation" description="Verify Visibility And Redirection Behaviour Of Home Page Elements" finished-at="2024-03-07T23:55:45 IST" duration-ms="6663" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- homePageValidation -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:XYZBank.AddCustomerPageValidationTest@1b11171f]" started-at="2024-03-07T23:55:45 IST" name="closeBrowser" finished-at="2024-03-07T23:55:46 IST" duration-ms="438" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- XYZBank.AddCustomerPageValidationTest -->
       <class name="XYZBank.NoAccountsValidationTest">
-        <test-method is-config="true" signature="launcher()[pri:0, instance:XYZBank.NoAccountsValidationTest@4c1909a3]" started-at="2024-03-07T23:57:12 IST" name="launcher" finished-at="2024-03-07T23:57:17 IST" duration-ms="5019" status="PASS">
+        <test-method is-config="true" signature="launcher(java.lang.String)[pri:0, instance:XYZBank.NoAccountsValidationTest@3012646b]" started-at="2024-03-08T04:03:39 IST" name="launcher" finished-at="2024-03-08T04:03:46 IST" duration-ms="6833" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launcher -->
-        <test-method signature="noAccountsValidation()[pri:0, instance:XYZBank.NoAccountsValidationTest@4c1909a3]" started-at="2024-03-07T23:57:17 IST" name="noAccountsValidation" description="Verify Customer Journey With Having No Accounts" finished-at="2024-03-07T23:57:28 IST" duration-ms="11111" status="PASS">
+        <test-method signature="noAccountsValidation()[pri:0, instance:XYZBank.NoAccountsValidationTest@3012646b]" started-at="2024-03-08T04:03:46 IST" name="noAccountsValidation" description="Verify Customer Journey With Having No Accounts" finished-at="2024-03-08T04:03:58 IST" duration-ms="12097" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- noAccountsValidation -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:XYZBank.NoAccountsValidationTest@4c1909a3]" started-at="2024-03-07T23:57:28 IST" name="closeBrowser" finished-at="2024-03-07T23:57:51 IST" duration-ms="22972" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:XYZBank.NoAccountsValidationTest@3012646b]" started-at="2024-03-08T04:03:58 IST" name="closeBrowser" finished-at="2024-03-08T04:04:01 IST" duration-ms="2472" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- XYZBank.NoAccountsValidationTest -->
-      <class name="XYZBank.CustomerLoginValidationTest">
-        <test-method is-config="true" signature="launcher()[pri:0, instance:XYZBank.CustomerLoginValidationTest@26e356f0]" started-at="2024-03-07T23:54:49 IST" name="launcher" finished-at="2024-03-07T23:54:54 IST" duration-ms="4782" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launcher -->
-        <test-method signature="customerLoginValidation()[pri:0, instance:XYZBank.CustomerLoginValidationTest@26e356f0]" started-at="2024-03-07T23:54:54 IST" name="customerLoginValidation" description="Verify Login Functionality Of Customer" finished-at="2024-03-07T23:54:58 IST" duration-ms="4515" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- customerLoginValidation -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:XYZBank.CustomerLoginValidationTest@26e356f0]" started-at="2024-03-07T23:54:58 IST" name="closeBrowser" finished-at="2024-03-07T23:54:59 IST" duration-ms="535" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- XYZBank.CustomerLoginValidationTest -->
-      <class name="XYZBank.HomePageValidationTest">
-        <test-method is-config="true" signature="launcher()[pri:0, instance:XYZBank.HomePageValidationTest@66d3eec0]" started-at="2024-03-07T23:54:38 IST" name="launcher" finished-at="2024-03-07T23:54:44 IST" duration-ms="5349" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launcher -->
-        <test-method signature="homePageValidation()[pri:0, instance:XYZBank.HomePageValidationTest@66d3eec0]" started-at="2024-03-07T23:54:44 IST" name="homePageValidation" description="Verify Visibility And Redirection Behaviour Of Home Page Elements" finished-at="2024-03-07T23:54:47 IST" duration-ms="3675" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- homePageValidation -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:XYZBank.HomePageValidationTest@66d3eec0]" started-at="2024-03-07T23:54:47 IST" name="closeBrowser" finished-at="2024-03-07T23:54:49 IST" duration-ms="1687" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- XYZBank.HomePageValidationTest -->
-    </test> <!-- Launching Website -->
+    </test> <!-- Launching Website In Firefox -->
   </suite> <!-- Practice Suite -->
 </testng-results>

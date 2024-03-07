@@ -24,21 +24,21 @@ public class BaseTest {
 			System.out.println(e);
 		}
 	}
-
-	public static void initialization() {
-		String browserName = prop.getProperty("browser");
-
-		if (browserName.equalsIgnoreCase("Chrome")) {
+	
+	
+	public static void initialization(String browser) {
+		
+		if (browser.equalsIgnoreCase("Chrome")) {
 			System.setProperty("webdriver.chrome.driver",
 					"C:\\Users\\expandable\\Downloads\\browserdrivers\\chromedriver-win64\\chromedriver.exe");
 			driver = new ChromeDriver();
 		} 
-		else if(browserName.equalsIgnoreCase("Firefox")) {
-			System.setProperty("webdriver.chrome.driver",
-					"C:\\Users\\expandable\\Downloads\\browserdrivers\\chromedriver-win64\\chromedriver.exe");
+		else if(browser.equalsIgnoreCase("Firefox")) {
+			System.setProperty("webdriver.gecko.driver",
+					"C:\\Users\\expandable\\Documents\\driver//geckodriver.exe");
 			driver = new FirefoxDriver();
 		} 
-		else if (browserName.equalsIgnoreCase("Edge")) {
+		else if (browser.equalsIgnoreCase("Edge")) {
 			System.setProperty("webdriver.chrome.driver",
 					"C:\\Users\\expandable\\Downloads\\browserdrivers\\chromedriver-win64\\chromedriver.exe");
 			driver = new EdgeDriver();
