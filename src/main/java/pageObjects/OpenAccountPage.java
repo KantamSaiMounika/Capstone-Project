@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.Select;
 
 public class OpenAccountPage {
 	@FindBy(id = "userSelect")
-	WebElement customer;
+	WebElement customerNames;
 	
 	@FindBy(id = "currency")
 	WebElement currencySelection;
@@ -17,7 +17,7 @@ public class OpenAccountPage {
 	WebElement processButton;
 
 	public void selectCustomer(String customername) {
-		Select selectUser = new Select(customer);
+		Select selectUser = new Select(customerNames);
 		selectUser.selectByVisibleText(customername);
 	}
 

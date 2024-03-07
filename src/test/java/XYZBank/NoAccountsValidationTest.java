@@ -1,62 +1,44 @@
 package XYZBank;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import base.BaseTest;
 import pageObjects.AddCustomerPage;
 import pageObjects.BankManagerLandingPage;
 import pageObjects.CustomerLoginPage;
-import pageObjects.CustomerWelcomePage;
-import pageObjects.CustomersPage;
-import pageObjects.DepositPage;
 import pageObjects.HomePage;
-import pageObjects.OpenAccountPage;
-import pageObjects.TransactionsPage;
-import pageObjects.WithdrawalPage;
 
-public class NoAccountsValidationTest {
+public class NoAccountsValidationTest extends BaseTest {
 
 	public static HomePage homePage;
 	public static CustomerLoginPage customerLoginPage;
-	public static CustomerWelcomePage customerWelcomePage;
-	public static TransactionsPage transactionsPage;
-	public static DepositPage depositPage;
-	public static WithdrawalPage withdrawalPage;
 	public static BankManagerLandingPage bankManagerLandingPage;
 	public static AddCustomerPage addCustomerPage;
-	public static OpenAccountPage openAccountPage;
-	public static CustomersPage customersPage;
-	WebDriver driver;
+	
+	String firstname = prop.getProperty("firstName");
+	String lastname = prop.getProperty("lastName");
+	String postcode = prop.getProperty("postCode");
+	String customerAddedAlertMessage = prop.getProperty("customerAddedAlertMessage");
+	String noAccountsFoundMessage = prop.getProperty("noAccountsFoundMessage");
 
 	@BeforeMethod
 	public void launcher() throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver",
-				"C:\\Users\\expandable\\Downloads\\browserdrivers\\chromedriver-win64\\chromedriver.exe");
-		driver = new ChromeDriver();
+		
+		initialization();
+		
 		homePage = new HomePage(driver);
 		customerLoginPage = new CustomerLoginPage(driver);
-		customerWelcomePage = new CustomerWelcomePage(driver);
-		transactionsPage = new TransactionsPage(driver);
-		depositPage = new DepositPage(driver);
-		withdrawalPage = new WithdrawalPage(driver);
 		bankManagerLandingPage = new BankManagerLandingPage(driver);
 		addCustomerPage = new AddCustomerPage(driver);
-		openAccountPage = new OpenAccountPage(driver);
-		customersPage = new CustomersPage(driver);
-		driver.get("https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login");
-		// driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
-		driver.manage().window().maximize();
-		Thread.sleep(2000);
 	}
 	
 	@Test(description = "Verify Customer Journey With Having No Accounts")
 	public void noAccountsValidation() throws InterruptedException {
 		
-		homePage.waitTillPageLoaded(driver);
+		homePage.waitTillPageLoaded();
 		homePage.clickBankManagerLogin();
 		
 		Thread.sleep(2000);
@@ -66,19 +48,13 @@ public class NoAccountsValidationTest {
 		
 		Thread.sleep(1000);
 		
-		String firstname = "Kantam";
-		String lastname = "Sai Mounika";
-		String postcode = "533102";
-		
 		addCustomerPage.addCustomerDetails(firstname, lastname, postcode);
 		
 		Thread.sleep(2000);
 		
 		String actualAlertMessage = driver.switchTo().alert().getText();
 	
-		String expectedAlertMessage = "Customer added successfully with customer id :";
-
-		Assert.assertTrue(actualAlertMessage.contains(expectedAlertMessage));
+		Assert.assertTrue(actualAlertMessage.contains(customerAddedAlertMessage));
 		driver.switchTo().alert().accept();
 		
 		homePage.clickHomeButton();
@@ -90,9 +66,8 @@ public class NoAccountsValidationTest {
 		customerLoginPage.clickLogin();
 		
 		String actualMessage = driver.findElement(By.xpath("//span[@ng-show='noAccount']")).getText();
-		String expectedMessage = "Please open an account with us.";
 		
-		Assert.assertEquals(actualMessage, expectedMessage, "Verify Message For Customer With No Accounts Found");
+		Assert.assertEquals(actualMessage, noAccountsFoundMessage, "Verify Message For Customer With No Accounts Found");
 	}
 	
 }

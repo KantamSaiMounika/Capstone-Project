@@ -3,12 +3,13 @@
 <suite name="Failed suite [Practice Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Launching Website(failed)">
     <classes>
-      <class name="XYZBank.TransactionsPageValidationTest">
+      <class name="XYZBank.CustomersPageValidationTest">
         <methods>
+          <include name="closeBrowser"/>
           <include name="launcher"/>
-          <include name="transcationsPageValidation"/>
+          <include name="customersPageValidation"/>
         </methods>
-      </class> <!-- XYZBank.TransactionsPageValidationTest -->
+      </class> <!-- XYZBank.CustomersPageValidationTest -->
     </classes>
   </test> <!-- Launching Website(failed) -->
 </suite> <!-- Failed suite [Practice Suite] -->

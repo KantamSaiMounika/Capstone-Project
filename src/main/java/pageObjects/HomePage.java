@@ -11,7 +11,9 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
-public class HomePage {
+import base.BaseTest;
+
+public class HomePage extends BaseTest {
 	
 
 	@FindBy(xpath = "//strong[@class='mainHeading']")
@@ -26,7 +28,7 @@ public class HomePage {
 	@FindBy(xpath = "//button[contains(text(),'Bank Manager Login')]")
 	WebElement bankManagerLogin;
 
-	public void waitTillPageLoaded(WebDriver driver){
+	public void waitTillPageLoaded(){
 		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(60));
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//strong[@class='mainHeading']")));
 	}
@@ -54,6 +56,5 @@ public class HomePage {
 	
 	public HomePage(WebDriver driver) {
 		PageFactory.initElements(driver, this);;
-	//	PageFactory.initElements(driver,this);
 	}
 }
