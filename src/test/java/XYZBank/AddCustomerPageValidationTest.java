@@ -1,6 +1,7 @@
 package XYZBank;
 
 import org.testng.Assert;
+
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
@@ -51,7 +52,7 @@ public class AddCustomerPageValidationTest extends BaseTest {
 		
 		Thread.sleep(2000);
 		
-		String actualAlertMessage = driver.switchTo().alert().getText().;
+		String actualAlertMessage = driver.switchTo().alert().getText();
 		String expectedAlertMessage = "Customer added successfully with customer id :";
 
 		Assert.assertTrue(actualAlertMessage.contains("gfhthrtj"));
