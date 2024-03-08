@@ -51,10 +51,10 @@ public class AddCustomerPageValidationTest extends BaseTest {
 		
 		Thread.sleep(2000);
 		
-		String actualAlertMessage = driver.switchTo().alert().getText();
+		String actualAlertMessage = driver.switchTo().alert().getText().;
 		String expectedAlertMessage = "Customer added successfully with customer id :";
 
-		Assert.assertTrue(actualAlertMessage.contains(expectedAlertMessage));
+		Assert.assertTrue(actualAlertMessage.contains("gfhthrtj"));
 		driver.switchTo().alert().accept();
 			
 	}
