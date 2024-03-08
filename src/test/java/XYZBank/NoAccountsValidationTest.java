@@ -3,6 +3,7 @@ package XYZBank;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -27,7 +28,7 @@ public class NoAccountsValidationTest extends BaseTest {
 
 	@Parameters({"browser"})
 	@BeforeMethod
-	public void launcher(String browser) throws InterruptedException {
+	public void launcher(@Optional("chrome") String browser) throws InterruptedException {
 		
 		initialization(browser);
 		
