@@ -34,11 +34,11 @@
 			<version>2.41.2</version>
 		</dependency>
 
-		<dependency>
+		<!--<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi</artifactId>
 			<version>3.16-beta2</version>
-		</dependency>
+		</dependency>-->
 
 		<!--
 		https://mvnrepository.com/artifact/p2.eclipse-plugin/org.apache.commons.io -->
@@ -78,11 +78,11 @@
 			<version>1.0-beta</version>
 		</dependency>
 
-		<dependency>
+		<!--<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi</artifactId>
-			<version>3.9</version>
-		</dependency>
+			<version>5.2.5</version>
+		</dependency>-->
 
 
 		<!-- https://mvnrepository.com/artifact/org.testng/testng -->

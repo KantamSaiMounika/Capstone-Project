@@ -24,7 +24,6 @@ public class HomePageValidationTest extends BaseTest {
 		homePage = new HomePage(driver);
 	}
  
-
 	@Test(description = "Verify Visibility And Redirection Behaviour Of Home Page Elements")
 		public void homePageValidation() throws InterruptedException {
 		
