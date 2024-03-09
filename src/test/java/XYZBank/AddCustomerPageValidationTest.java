@@ -21,6 +21,7 @@ public class AddCustomerPageValidationTest extends BaseTest {
 	String firstname = prop.getProperty("firstName");
 	String lastname = prop.getProperty("lastName");
 	String postcode = prop.getProperty("postCode");
+	String customeraddedalertmessage = prop.getProperty("customerAddesAlertMessage");
 	
 	@Parameters({"browser"})
 	@BeforeMethod
@@ -53,9 +54,8 @@ public class AddCustomerPageValidationTest extends BaseTest {
 		Thread.sleep(2000);
 		
 		String actualAlertMessage = driver.switchTo().alert().getText();
-		String expectedAlertMessage = "Customer added successfully with customer id :";
-
-		Assert.assertTrue(actualAlertMessage.contains("gfhthrtj"));
+		
+		Assert.assertTrue(actualAlertMessage.contains(customeraddedalertmessage));
 		driver.switchTo().alert().accept();
 			
 	}
