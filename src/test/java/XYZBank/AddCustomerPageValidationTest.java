@@ -21,7 +21,7 @@ public class AddCustomerPageValidationTest extends BaseTest {
 	String firstname = prop.getProperty("firstName");
 	String lastname = prop.getProperty("lastName");
 	String postcode = prop.getProperty("postCode");
-	String customeraddedalertmessage = prop.getProperty("customerAddesAlertMessage");
+	String customeraddedalertmessage = prop.getProperty("customerAddedAlertMessage");
 	
 	@Parameters({"browser"})
 	@BeforeMethod
